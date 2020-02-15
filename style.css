@@ -1,0 +1,732 @@
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*リセットCSS*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, , pre, img,
+dl, dt, dd, ol, ul, li, form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside,  details, figure,
+footer, header, menu, nav, section,
+{
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+}
+
+body {
+    margin: 0;
+  padding: 0;
+ line-height: 1.6;
+ font-weight: 400;
+font-family: 'Sawarabi Mincho', sans-serif;
+font-family: 'Noto Serif', serif;
+ width: 100%;
+ line-height: 150%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+
+ul, ol {
+ list-style:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ text-decoration: none;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+
+button {
+ line-height: 1.0;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+ appearance: none;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*ヘッダー部分*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #212121;
+}
+
+header h1 {
+    float: left;
+    margin: 15px 0 15px 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+header h1 a {
+    color: #FFF;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*ナビゲーション*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+
+/*親要素をrelativeに*/
+#nav-home {
+    position: relative; 
+    float: right;
+    width: 500px;
+    height: 50px;
+}
+
+nav a {
+    padding: 10px;
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: dimgray;
+}
+
+.nav-box a:hover {
+    background-color: #cc66ff;
+}
+
+.nav-home ul {
+    position: absolute;
+    top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.nav-home ul li {
+    float: left;
+    margin: 15px 10px;
+}
+
+
+ul li.nav-box a {
+    background-color: gray;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*メインコンテンツ*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+.main {
+    background-color: #dcdcdc;
+/*    フォームをしたにもっと下げるならこのpaddingを広げる*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main p {
+    margin: 5px 0px;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+.main h1 {
+    font-size: 24px;
+    padding: 10px 5px;
+    margin: 20px 0 5px 0;
+    color: #222;
+}
+
+.intro {
+    margin: 40px 0 60px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #222;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 1060px;
+    min-height: 1500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-container-under {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1060px;
+}
+
+/*トップページパネル*/
+.panel-contents {
+    width: 830px;
+    overflow: hidden;
+}
+
+.panel-list {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+}
+
+.panel-list > .panel-top {
+    float: left;
+    width: 20%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.panel-list a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.img-top {
+    width: 100%;
+    min-height: 250px;
+}
+
+.panel-pic {
+   text-align: center;
+    height: 250px;
+}
+
+.panel-title {
+    position: relative;
+    min-height: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.rating {
+/*    displayをblockに指定して縦並びにする*/
+    display: block;
+    padding: 0 10px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*評価アイコン*/
+.icn-star{
+    color: #fcc800;
+}
+
+
+
+.panel-list a {
+    color: #222222;
+    margin-top: 30px;
+}
+
+.panel {
+    min-width: 245px;
+    float: left;
+    margin: 10px;
+}
+
+
+
+h1.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.back a {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.back a:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+.back {
+    margin-top: 40px;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*フォーム*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+.form h1,.form-out h1 {
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.form {
+    min-height: 650px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.form-out {
+    min-height: 550px;
+    text-align: center;
+}
+
+.form > .area-msg, .area-msg {
+    padding: 0 0 5px 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: red;
+    box-sizing: border-box;
+    height: 25px;
+}
+.area-msg-common{
+    padding: 0 0 5px 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: red;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.form-container {
+    width: 600px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+.form-input{
+    width: 730px;
+    margin-right: 15px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    float: left;
+    border: 5px solid dimgray;
+}
+
+
+.form-edit {
+    margin: 0 auto;
+    width: 450px;
+    padding: 10px;
+}
+
+
+
+
+
+.form h3 {
+    margin-top: 35px;
+}
+
+
+
+/*プロフィール画像*/
+.form .area-drop {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: dimgray;
+    text-align: center;
+    line-height: 150px;
+/*    画像アップロードコンテンツの親*/
+    position: relative;
+    color: #ccc;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.form .input-file {
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.form .prev-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*ドラマ画像*/
+.form .area-drop-work {
+    margin-bottom: 15px;
+    width: 50%;
+    height: 250px;
+    background: dimgray;
+    text-align: center;
+    line-height: 150px;
+/*    画像アップロードコンテンツの親*/
+    position: relative;
+    color: #ccc;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.form .input-file-work {
+    opacity: 0;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.form .prev-img-work {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form .label-require {
+    margin: 5px;
+    background: red;
+    font-size: 14px;
+    padding: 3px 3px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 20%;
+}
+
+label {
+    display: block;
+    margin:5px 10px;
+}
+
+label.err input, label.err select {
+    background: pink;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea {
+    display: block;
+/*    inputを中央寄せにするためにmargin: 0 autoに指定する*/
+    margin: 0 auto;
+    font-size:15px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+select {
+     display: block;
+/*    inputを中央寄せにするためにmargin: 0 autoに指定する*/
+    margin: 0 auto;
+    font-size:15px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+}
+
+.btn-box {
+    border-radius: 5px;
+    background: #212121;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 20%;
+    min-height: 35px;
+    font-size: 15px;
+}
+.btn-delete {
+    border-radius: 5px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 20%;
+    min-height: 35px;
+    font-size: 15px;
+}
+
+.btn-search {
+    border-radius: 5px;
+    background: #212121;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn-box:hover, .btn-search:hover {
+    background: black;
+}
+
+.btn-out:hover {
+    background: red;
+}
+
+.form-out h3, .form-out p {
+    text-align: center;
+}
+
+.prof_form img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.form-input {
+    display: block;
+}
+
+.workimg img{
+    width: 200px;
+    height: 200px;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*検索バー*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+#searchbar {
+    float: left;
+    width: 200px;
+    margin-right: 15px;
+    background: dimgray;
+    min-height: 600px;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+#searchbar .title{
+    text-align: center;
+    font-size: 18px;
+}
+
+#searchbar .selectbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchbar select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+}
+
+#searchbar .icn_select:after {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:  10px solid #222;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 7px solid transparent;
+    content: "";
+}
+
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*検索エリア*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+.search-title {
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding: 5px 20px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.search-left {
+    float: left;
+    line-height: 50px;
+}
+
+.search-right {
+    float: right;
+    line-height: 50px;
+}
+
+
+.search-title .total-num {
+    padding-right: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*サイドバー*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+
+#sidebar {
+    float: right;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 250px;
+    min-height: 600px;
+    text-align: center;
+    background-color: dimgray;
+
+}
+
+#sidebar h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+#sidebar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+#sidebar a {
+    display: block;
+    margin: 10px;
+     color: white;
+}
+#sidebar a:hover {
+    cursor: pointer;
+    border-bottom: 2px dotted white;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*ページネーション*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+.pagination {
+    position: relative;
+    overflow: hidden;
+}
+
+.pagination-list {
+    position: relative;
+    left: 50%;
+    float: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pagination .list-item {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.pagination .list-item:last-child {
+    margin-right: 0;
+}
+
+.pagination .list-item a {
+    display: block;
+    padding: 5px 10px;
+    background: #eee;
+    color: black;
+    text-decoration: none;
+}
+
+.pagination .list-item.active a {
+    background: dimgray;
+    color: white;
+}
+
+.pagenation .list-item a:hover {
+    background: #eee;
+    color: white;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*フッター*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+footer {
+    background: #212121;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+/*メッセージ*/
+/*＊＊＊＊＊＊＊＊＊＊＊＊*/
+.msg-slide {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(249, 121, 62, 0.5);
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
